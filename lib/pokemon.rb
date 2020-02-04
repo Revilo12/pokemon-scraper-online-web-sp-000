@@ -16,20 +16,20 @@ class Pokemon
   #     sql = <<-SQL
   #         INSERT INTO pokemon (name, type) VALUES (?, ?)
   #     SQL
-  # 
+  #
   #     :db.execute(sql, :name, :type)
   #   end
   # end
-  # 
+  #
   # def self.find(:id, :db)
   #   sql = <<-SQL
   #       SELECT * FROM pokemon
   #       WHERE pokemon.id = ?
   #       LIMIT 1
   #   SQL
-  # 
+  #
   #   row  = :db.execute(sql, :id)
-  # 
+  #
   #   self.new(row[0], row[1], row[2], :db)
   # end
 
