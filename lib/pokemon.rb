@@ -26,7 +26,7 @@ class Pokemon
 
     row  = db.execute(sql, id)
     #
-    self.new(id: row[0][0], name: row[0][1], type: row[0][2], db: db)
+    Pokemon.new(id: row[0][0], name: row[0][1], type: row[0][2], db: db)
   end
 
 end
