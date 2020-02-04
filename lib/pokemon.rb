@@ -17,7 +17,7 @@ class Pokemon
           INSERT INTO pokemon (name, type) VALUES (?, ?)
       SQL
 
-      :db.execute(sql, :name, :type)
+      db.execute(sql, name, type)
     end
   end
 
@@ -28,9 +28,9 @@ class Pokemon
         LIMIT 1
     SQL
 
-    row  = :db.execute(sql, :id)
+    row  = db.execute(sql, id)
 
-    self.new(row[0], row[1], row[2], :db)
+    self.new(row[0], row[1], row[2], db)
   end
 
 end
