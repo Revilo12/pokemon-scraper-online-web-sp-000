@@ -24,9 +24,9 @@ class Pokemon
         LIMIT 1
     SQL
 
-    row  = db.execute(sql, id)
-
-    self.new(id: row[0][0], name: row[0][1], type: row[0][2], db: db)
+    # row  = db.execute(sql, id)
+    #
+    # self.new(id: row[0][0], name: row[0][1], type: row[0][2], db: db)
   end
 
 end
