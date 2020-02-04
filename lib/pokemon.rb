@@ -19,5 +19,15 @@ class Pokemon
 
       :db.execute(sql, :name, :type)
     end
+  end
+
+  def self.find(:id, :db)
+    sql = <<-SQL
+        SELECT * FROM pokemon
+        WHERE pokemon.id = ?
+        LIMIT 1
+    SQL
+
+    :db.execute
 
 end
